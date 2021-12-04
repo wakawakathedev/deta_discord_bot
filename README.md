@@ -1,6 +1,6 @@
 # discord bot test on deta
 
-[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=your-repo-url)
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/wakawakathedev/deta_discord_bot)
 
 ### description
 
