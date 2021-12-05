@@ -21,14 +21,14 @@ def test(ctx):
     "Respond with I am not a test!"
     return "I am an updated a test!"
 
-# @discord.command()
-# def check_balance(ctx):
-#     "This should get the balance from the pv"
+@discord.command()
+def check_balance(ctx, account_number: str):
+    "This should get the balance from the pv"
 
-#     ctx.accon
-#     r = requests.get("http://52.52.160.149/accounts/0067a4d2b153f62041a9cca5454aebd06ea1d0827828da889ddaad991d077401/balance?format=json")
-#     print(r.json())
-#     return "Check balance"
+    r = requests.get(f"http://52.52.160.149/accounts/{account_number}/balance?format=json")
+    balance = r.json()["balance"]
+    print(balance)
+    return f"Balance `{account_number}``: `{balance}`"
 
 @discord.command()
 def help(ctx):
